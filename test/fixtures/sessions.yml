@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  client: one
+  service: one
+  trainer: one
+  performed_at: 2025-05-29 19:54:47
+  notes: MyText
+
+two:
+  client: two
+  service: two
+  trainer: two
+  performed_at: 2025-05-29 19:54:47
+  notes: MyText
