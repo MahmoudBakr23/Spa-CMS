@@ -100,8 +100,6 @@ GEM
     base64 (0.3.0)
     bcrypt (3.1.20)
     bcrypt_pbkdf (1.1.1)
-    bcrypt_pbkdf (1.1.1-arm64-darwin)
-    bcrypt_pbkdf (1.1.1-x86_64-darwin)
     benchmark (0.4.1)
     bigdecimal (3.2.0)
     bindex (0.8.1)
@@ -159,7 +157,6 @@ GEM
     ffi (1.17.2-arm-linux-gnu)
     ffi (1.17.2-arm-linux-musl)
     ffi (1.17.2-arm64-darwin)
-    ffi (1.17.2-x86_64-darwin)
     ffi (1.17.2-x86_64-linux-gnu)
     ffi (1.17.2-x86_64-linux-musl)
     ffi-compiler (1.3.2)
@@ -298,6 +295,7 @@ GEM
       date
       net-protocol
     net-pop (0.1.2)
+      net-protocol
     net-protocol (0.2.2)
       timeout
     net-scp (4.1.0)
@@ -317,8 +315,6 @@ GEM
     nokogiri (1.18.8-arm-linux-musl)
       racc (~> 1.4)
     nokogiri (1.18.8-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.18.8-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.18.8-x86_64-linux-gnu)
       racc (~> 1.4)
@@ -530,7 +526,6 @@ GEM
     thruster (0.1.13)
     thruster (0.1.13-aarch64-linux)
     thruster (0.1.13-arm64-darwin)
-    thruster (0.1.13-x86_64-darwin)
     thruster (0.1.13-x86_64-linux)
     tilt (2.6.0)
     timeout (0.4.3)
@@ -575,8 +570,7 @@ PLATFORMS
   aarch64-linux-musl
   arm-linux-gnu
   arm-linux-musl
-  arm64-darwin
-  x86_64-darwin
+  arm64-darwin-24
   x86_64-linux
   x86_64-linux-gnu
   x86_64-linux-musl
@@ -636,7 +630,7 @@ DEPENDENCIES
   wkhtmltopdf-binary
 
 RUBY VERSION
-   ruby 3.3.3p89
+   ruby 3.4.2p28
 
 BUNDLED WITH
    2.6.9
