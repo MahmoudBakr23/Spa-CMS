@@ -49,12 +49,29 @@ ActiveAdmin.register Session do
 
   form do |f|
     f.inputs do
-      f.input :client
-      f.input :service
-      f.input :trainer
-      f.input :perform_at
-      f.input :status, as: :select, collection: Session::STATUSES
-      f.input :notes
+      f.input :client,
+              collection: Client.all.sort_by(&:last_name).map { |c| [c.full_name, c.id] },
+              prompt: "Select a client"
+
+      f.input :service,
+              collection: Service.order(:name).map { |s| [s.name, s.id] },
+              prompt: "Select a service"
+
+      f.input :trainer,
+              collection: Trainer.all.sort_by(&:last_name).map { |t| [t.full_name, t.id] },
+              prompt: "Select a trainer"
+
+      f.input :perform_at,
+              as: :datetime_picker,
+              input_html: { placeholder: "Choose session time" }
+
+      f.input :status,
+              as: :select,
+              collection: Session::STATUSES,
+              prompt: "Select status"
+
+      f.input :notes,
+              placeholder: "Optional notes about the session"
     end
     f.actions
   end

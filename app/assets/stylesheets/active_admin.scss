@@ -15,3 +15,146 @@
 // For example, to change the default status-tag color:
 //
 //   .status_tag { background: #6090DB; }
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+// Base font and layout
+body.active_admin {
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+    padding: 0 16px;
+}
+
+// Title bar spacing
+#title_bar .titlebar {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+// Flash messages
+#flash_notice,
+#flash_alert {
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+}
+
+// Universal link styles
+a {
+    color: #2563eb;
+    font-weight: 500;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #1d4ed8;
+    text-decoration: none !important;
+}
+
+// Table styles
+.index_table th,
+.index_table td {
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.index_table th {
+    background-color: #f3f4f6;
+    color: #111827;
+    font-weight: 600;
+}
+
+// Form styling
+label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.inputs .input {
+    margin-bottom: 14px;
+}
+
+// Buttons: Global consistency
+.button,
+.member_link,
+.action input[type="submit"],
+.action_items .action_item a,
+.index_as_table .actions a {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    text-decoration: none !important;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.button:hover,
+.member_link:hover,
+.action input[type="submit"]:hover,
+.action_items .action_item a:hover,
+.index_as_table .actions a:hover {
+    background-color: #1d4ed8 !important;
+}
+
+// Fix top-right "New" buttons globally (action_items)
+.action_items .action_item a {
+    background-color: #2563eb !important;
+    color: #808080 !important;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-weight: 500;
+    text-decoration: none !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.2s ease;
+}
+
+.action_items .action_item a:hover {
+    background-color: #1d4ed8 !important;
+    color: #808080 !important;
+}
+
+// Optional: Reset unwanted ActiveAdmin default white styling
+.action_items .action_item {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+// Prevent button wrapping in actions column
+.index_as_table .col-actions {
+    white-space: nowrap;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+// Make Delete buttons red
+a.delete_link,
+.button.delete,
+.action_items .action_item a.delete_link {
+    background-color: #dc2626 !important; // red-600 from Tailwind palette
+    color: #fff !important;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-weight: 500;
+    text-decoration: none !important;
+    box-shadow: none;
+    transition: background-color 0.2s ease;
+}
+
+a.delete_link:hover,
+.button.delete:hover,
+.action_items .action_item a.delete_link:hover {
+    background-color: #b91c1c !important; // red-700
+    color: #fff !important;
+}
