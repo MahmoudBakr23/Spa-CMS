@@ -1,6 +1,12 @@
 //= require active_admin/base
 //= require select2
 //= require_tree .
+//= require chartkick
+//= require Chart.bundle
+// quill javascript
+//= require activeadmin/quill_editor/quill
+//= require activeadmin/quill_editor_input
+//= require jquery-ui/widgets/autocomplete
 
 $(document).ready(function () {
   function initAjaxSelects() {
