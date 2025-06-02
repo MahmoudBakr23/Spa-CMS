@@ -1,0 +1,434 @@
+ar:
+  # Basic Rails translations
+  hello: "مرحبا بالعالم"
+
+  # Date and time formats
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      short: "%d %b"
+      long: "%d %B %Y"
+    day_names: [الأحد, الإثنين, الثلاثاء, الأربعاء, الخميس, الجمعة, السبت]
+    abbr_day_names: [أحد, إثن, ثلا, أرب, خمي, جمع, سبت]
+    month_names:
+      [
+        ~,
+        يناير,
+        فبراير,
+        مارس,
+        أبريل,
+        مايو,
+        يونيو,
+        يوليو,
+        أغسطس,
+        سبتمبر,
+        أكتوبر,
+        نوفمبر,
+        ديسمبر,
+      ]
+    abbr_month_names:
+      [~, ينا, فبر, مار, أبر, ماي, يون, يول, أغس, سبت, أكت, نوف, ديس]
+
+  time:
+    formats:
+      default: "%d/%m/%Y %H:%M"
+      short: "%d %b %H:%M"
+      long: "%d %B %Y %H:%M"
+
+  # Application specific translations
+  app:
+    name: "Opal Spa"
+    dashboard: "لوحة التحكم"
+    welcome: "مرحباً بك"
+
+  # Navigation and menu items
+  navigation:
+    dashboard: "الرئيسية"
+    clients: "العملاء"
+    trainers: "المدربين"
+    services: "الخدمات"
+    sessions: "الجلسات"
+    expenses: "المصروفات"
+    revenues: "الإيرادات"
+    admin_users: "المستخدمين الإداريين"
+    settings: "الإعدادات"
+    logout: "تسجيل الخروج"
+    login: "تسجيل الدخول"
+
+  # Model names (singular and plural)
+  activerecord:
+    models:
+      client:
+        one: "عميل"
+        other: "العملاء"
+      trainer:
+        one: "مدرب"
+        other: "المدربون"
+      service:
+        one: "خدمة"
+        other: "الخدمات"
+      session:
+        one: "جلسة"
+        other: "الجلسات"
+      expense:
+        one: "مصروف"
+        other: "المصروفات"
+      revenue:
+        one: "إيراد"
+        other: "الإيرادات"
+      admin_user:
+        one: "مستخدم إداري"
+        other: "المستخدمون الإداريون"
+
+    attributes:
+      client:
+        first_name: "الاسم الأول"
+        last_name: "الاسم الأخير"
+        phone: "رقم الهاتف"
+        email: "البريد الإلكتروني"
+        full_name: "الاسم الكامل"
+        created_at: "تاريخ التسجيل"
+        updated_at: "تاريخ التحديث"
+
+      trainer:
+        first_name: "الاسم الأول"
+        last_name: "الاسم الأخير"
+        phone: "رقم الهاتف"
+        admin_user: "المستخدم الإداري"
+        full_name: "الاسم الكامل"
+        created_at: "تاريخ التسجيل"
+        updated_at: "تاريخ التحديث"
+
+      service:
+        name: "اسم الخدمة"
+        price: "السعر"
+        duration: "المدة (بالدقائق)"
+        created_at: "تاريخ الإنشاء"
+        updated_at: "تاريخ التحديث"
+
+      session:
+        client: "العميل"
+        trainer: "المدرب"
+        service: "الخدمة"
+        perform_at: "موعد الجلسة"
+        status: "الحالة"
+        notes: "ملاحظات"
+        created_at: "تاريخ الحجز"
+        updated_at: "تاريخ التحديث"
+
+      expense:
+        name: "اسم المصروف"
+        amount: "المبلغ"
+        occurred_on: "تاريخ المصروف"
+        category: "الفئة"
+        notes: "ملاحظات"
+        trainer: "المدرب"
+        created_at: "تاريخ الإنشاء"
+        updated_at: "تاريخ التحديث"
+
+      revenue:
+        session: "الجلسة"
+        amount: "المبلغ"
+        created_at: "تاريخ الإنشاء"
+        updated_at: "تاريخ التحديث"
+
+      admin_user:
+        email: "البريد الإلكتروني"
+        password: "كلمة المرور"
+        role: "الدور"
+        sign_in_count: "عدد مرات تسجيل الدخول"
+        current_sign_in_at: "آخر تسجيل دخول"
+        created_at: "تاريخ الإنشاء"
+        updated_at: "تاريخ التحديث"
+
+  # Session status values
+  session_statuses:
+    scheduled: "مجدولة"
+    completed: "مكتملة"
+    cancelled: "ملغية"
+    no_show: "لم يحضر"
+
+  # User roles
+  user_roles:
+    admin: "مدير"
+    secretary: "سكرتير"
+    trainer: "مدرب"
+
+  # Dashboard translations
+  dashboard:
+    title: "لوحة التحكم"
+    total_clients: "إجمالي العملاء"
+    total_revenue: "إجمالي الإيرادات"
+    total_sessions: "إجمالي الجلسات"
+    upcoming_sessions: "الجلسات القادمة"
+    sessions_per_day: "الجلسات لكل يوم (آخر 30 يوم)"
+    revenue_per_day: "الإيرادات لكل يوم (آخر 30 يوم)"
+    sessions_by_service: "الجلسات حسب الخدمة"
+    revenue_by_service: "الإيرادات حسب الخدمة"
+    latest_sessions: "آخر الجلسات"
+    egp: "جنيه مصري"
+
+  # Form labels and buttons
+  forms:
+    submit: "حفظ"
+    cancel: "إلغاء"
+    delete: "حذف"
+    edit: "تعديل"
+    show: "عرض"
+    new: "جديد"
+    back: "رجوع"
+    search: "بحث"
+    filter: "تصفية"
+    export: "تصدير"
+    import: "استيراد"
+    actions: "الإجراءات"
+    refund: "استرداد"
+    select_client: "اختر عميل"
+    select_service: "اختر خدمة"
+    select_trainer: "اختر مدرب"
+    select_status: "اختر الحالة"
+    choose_time: "اختر موعد الجلسة"
+    optional_notes: "ملاحظات اختيارية حول الجلسة"
+    refund_success: "تم استرداد الجلسة #%{id} بنجاح."
+    refund_failed: "فشل في استرداد الجلسة."
+    past_sessions: "الجلسات السابقة"
+    password_confirmation: "تأكيد كلمة المرور"
+
+  # Action button patterns with correct Arabic word order
+  action_buttons:
+    new_client: "عميل جديد"
+    new_trainer: "مدرب جديد"
+    new_service: "خدمة جديدة"
+    new_session: "جلسة جديدة"
+    new_expense: "مصروف جديد"
+    new_revenue: "إيراد جديد"
+    new_admin_user: "مستخدم إداري جديد"
+    edit_client: "تعديل العميل"
+    edit_trainer: "تعديل المدرب"
+    edit_service: "تعديل الخدمة"
+    edit_session: "تعديل الجلسة"
+    edit_expense: "تعديل المصروف"
+    edit_revenue: "تعديل الإيراد"
+    edit_admin_user: "تعديل المستخدم الإداري"
+
+  # Common phrases
+  common:
+    yes: "نعم"
+    no: "لا"
+    loading: "جاري التحميل..."
+    no_data: "لا توجد بيانات"
+    confirmation: "هل أنت متأكد؟"
+    success: "تم بنجاح"
+    error: "حدث خطأ"
+    warning: "تحذير"
+    info: "معلومات"
+    view: "عرض"
+    download: "تحميل"
+
+  # Language switcher
+  language:
+    switch_to_english: "English"
+    switch_to_arabic: "العربية"
+    current_language: "اللغة الحالية"
+    switched_successfully: "تم تغيير اللغة إلى %{locale} بنجاح"
+    invalid_locale: "اختيار لغة غير صالح"
+    en: "الإنجليزية"
+    ar: "العربية"
+
+  # Submit button translations with correct Arabic word order
+  helpers:
+    submit:
+      create: "إنشاء %{model}"
+      update: "تحديث %{model}"
+      client:
+        create: "إنشاء العميل"
+        update: "تحديث العميل"
+      trainer:
+        create: "إنشاء المدرب"
+        update: "تحديث المدرب"
+      service:
+        create: "إنشاء الخدمة"
+        update: "تحديث الخدمة"
+      session:
+        create: "إنشاء الجلسة"
+        update: "تحديث الجلسة"
+      expense:
+        create: "إنشاء المصروف"
+        update: "تحديث المصروف"
+      revenue:
+        create: "إنشاء الإيراد"
+        update: "تحديث الإيراد"
+      admin_user:
+        create: "إنشاء المستخدم الإداري"
+        update: "تحديث المستخدم الإداري"
+
+  # ActiveAdmin/Formtastic specific form submit translations
+  formtastic:
+    actions:
+      create: "إنشاء %{model}"
+      update: "تحديث %{model}"
+      submit: "حفظ"
+      cancel: "إلغاء"
+      reset: "إعادة تعيين"
+      client:
+        create: "إنشاء العميل"
+        update: "تحديث العميل"
+      trainer:
+        create: "إنشاء المدرب"
+        update: "تحديث المدرب"
+      service:
+        create: "إنشاء الخدمة"
+        update: "تحديث الخدمة"
+      session:
+        create: "إنشاء الجلسة"
+        update: "تحديث الجلسة"
+      expense:
+        create: "إنشاء المصروف"
+        update: "تحديث المصروف"
+      revenue:
+        create: "إنشاء الإيراد"
+        update: "تحديث الإيراد"
+      admin_user:
+        create: "إنشاء المستخدم الإداري"
+        update: "تحديث المستخدم الإداري"
+
+  # ActiveAdmin translations
+  active_admin:
+    dashboard: "لوحة التحكم"
+    powered_by: ""
+    comments_menu: "التعليقات"
+    dashboard_welcome:
+      welcome: "مرحباً بك في Active Admin. هذه هي صفحة لوحة التحكم الافتراضية."
+    view: "عرض"
+    edit: "تعديل"
+    delete: "حذف"
+    delete_confirmation: "هل أنت متأكد أنك تريد حذف هذا؟"
+    new_model: "%{model} جديد"
+    edit_model: "تعديل %{model}"
+    delete_model: "حذف %{model}"
+    details: "تفاصيل %{model}"
+    cancel: "إلغاء"
+    empty: "فارغ"
+    previous: "السابق"
+    next: "التالي"
+    download: "تحميل:"
+    has_many_new: "إضافة %{model} جديد"
+    has_many_delete: "حذف"
+    has_many_remove: "إزالة"
+    created: "تم إنشاء %{model} بنجاح."
+    updated: "تم تحديث %{model} بنجاح."
+    destroyed: "تم حذف %{model} بنجاح."
+    new: "جديد"
+    create: "إنشاء"
+    update: "تحديث"
+    submit: "حفظ"
+    are_you_sure: "هل أنت متأكد؟"
+    action_items:
+      new: "جديد"
+      edit: "تعديل"
+      delete: "حذف"
+    # Use ActiveAdmin's translation pattern for new buttons
+    filters:
+      buttons:
+        filter: "تصفية"
+        clear: "مسح التصفية"
+      predicates:
+        contains: "يحتوي على"
+        equals: "يساوي"
+        starts_with: "يبدأ بـ"
+        ends_with: "ينتهي بـ"
+        greater_than: "أكبر من"
+        less_than: "أقل من"
+    search_status:
+      headline: "حالة البحث:"
+      current_scope: "النطاق:"
+      current_filters: "التصفيات الحالية:"
+      no_current_filters: "لا توجد"
+    status_tag:
+      "yes": "نعم"
+      "no": "لا"
+    main_content: "يرجى تنفيذ %{model}#main_content لعرض المحتوى."
+    logout: "تسجيل الخروج"
+    sidebars:
+      filters: "التصفيات"
+      search_status: "حالة البحث"
+    pagination:
+      empty: "لم يتم العثور على %{model}"
+      one: "عرض <b>1</b> %{model}"
+      one_page: "عرض <b>جميع %{n}</b> %{model}"
+      multiple: "عرض %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> من أصل <b>%{total}</b>"
+      multiple_without_total: "عرض %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b>"
+      entry:
+        one: "عنصر"
+        other: "عناصر"
+    any: "أي"
+    blank_slate:
+      content: "لا توجد %{resource_name} حتى الآن."
+      link: "إنشاء واحد"
+    dropdown_actions:
+      button_label: "الإجراءات"
+    batch_actions:
+      button_label: "إجراءات متعددة"
+      default_confirmation: "هل أنت متأكد أنك تريد القيام بذلك؟"
+      delete_confirmation: "هل أنت متأكد أنك تريد حذف هذه %{plural_model}؟"
+      succesfully_destroyed:
+        one: "تم حذف %{model} واحد بنجاح"
+        other: "تم حذف %{count} %{plural_model} بنجاح"
+      selection_toggle_explanation: "(تبديل التحديد)"
+      action_label: "%{title} المحدد"
+      labels:
+        destroy: "حذف"
+    comments:
+      created_at: "تم الإنشاء"
+      resource_type: "نوع المورد"
+      author_type: "المؤلف"
+      body: "النص"
+      author_type_html: "المؤلف"
+      author_name: "المؤلف"
+      add: "إضافة تعليق"
+      resource: "المورد"
+      no_comments_yet: "لا توجد تعليقات حتى الآن."
+      title_content: "التعليقات (%{count})"
+      title: "التعليقات"
+      author_missing: "مؤلف مجهول"
+      body_missing: "لا يوجد محتوى"
+      resource_missing: "مورد محذوف"
+      submit: "إضافة تعليق"
+      errors:
+        empty_text: "لا يمكن أن يكون التعليق فارغاً"
+        creation_error: "خطأ في إنشاء التعليق"
+    devise:
+      username:
+        title: "اسم المستخدم"
+      email:
+        title: "البريد الإلكتروني"
+      subdomain:
+        title: "النطاق الفرعي"
+      password:
+        title: "كلمة المرور"
+      sign_up:
+        title: "التسجيل"
+        submit: "التسجيل"
+      login:
+        title: "تسجيل الدخول"
+        remember_me: "تذكرني"
+        submit: "تسجيل الدخول"
+      reset_password:
+        title: "نسيت كلمة المرور؟"
+        submit: "إعادة تعيين كلمة المرور"
+      change_password:
+        title: "تغيير كلمة المرور"
+        submit: "تغيير كلمة المرور"
+      unlock:
+        title: "إعادة إرسال تعليمات الإلغاء"
+        submit: "إعادة إرسال تعليمات الإلغاء"
+      resend_confirmation_instructions:
+        title: "إعادة إرسال تعليمات التأكيد"
+        submit: "إعادة إرسال تعليمات التأكيد"
+    access_denied:
+      message: "غير مخول لك للقيام بهذا الإجراء."
+    index_list:
+      table: "جدول"
+      block: "قائمة"
+      grid: "شبكة"
+      blog: "مدونة"

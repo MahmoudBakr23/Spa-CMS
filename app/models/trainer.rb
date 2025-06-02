@@ -9,7 +9,11 @@ class Trainer < ApplicationRecord
   }
 
   def full_name
-    "#{first_name} #{last_name}"
+    "#{first_name} #{last_name}".strip
+  end
+
+  def to_s
+    full_name.present? ? full_name : "Trainer ##{id}"
   end
 
   def self.ransackable_attributes(auth_object = nil)

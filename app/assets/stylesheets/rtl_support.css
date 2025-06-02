@@ -1,0 +1,545 @@
+/* RTL Support Styles for Spa-CMS */
+
+/* Base RTL Styles */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] body {
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+  direction: rtl;
+}
+
+/* Language Switcher in Header */
+.language-switcher-header {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+[dir="rtl"] .language-switcher-header {
+  right: auto;
+  left: 10px;
+}
+
+/* ActiveAdmin RTL Adjustments */
+[dir="rtl"] #active_admin_content {
+  direction: rtl;
+}
+
+[dir="rtl"] #header {
+  direction: rtl;
+}
+
+[dir="rtl"] #header #site_title {
+  float: right;
+}
+
+[dir="rtl"] #header .header-item {
+  float: right;
+}
+
+[dir="rtl"] #header .utility_nav {
+  float: left;
+}
+
+/* Sidebar RTL */
+[dir="rtl"] #sidebar {
+  float: left;
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] #main_content_wrapper {
+  float: right;
+  margin-left: 270px;
+  margin-right: 0;
+}
+
+[dir="rtl"] #main_content_wrapper #main_content {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+/* Navigation Menu RTL */
+[dir="rtl"] #tabs {
+  direction: rtl;
+}
+
+[dir="rtl"] #tabs > li {
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+[dir="rtl"] #tabs > li > a {
+  margin-left: 0;
+  margin-right: 1px;
+  border-radius: 4px 4px 0 0;
+}
+
+/* Breadcrumbs RTL */
+[dir="rtl"] .breadcrumb {
+  direction: rtl;
+}
+
+[dir="rtl"] .breadcrumb a {
+  float: right;
+}
+
+[dir="rtl"] .breadcrumb .breadcrumb_sep {
+  float: right;
+  margin: 0 5px 0 0;
+}
+
+/* Tables RTL */
+[dir="rtl"] table {
+  direction: rtl;
+}
+
+[dir="rtl"] table th,
+[dir="rtl"] table td {
+  text-align: right;
+}
+
+[dir="rtl"] table th:first-child,
+[dir="rtl"] table td:first-child {
+  border-right: none;
+  border-left: 1px solid #e8e8e8;
+}
+
+[dir="rtl"] table th:last-child,
+[dir="rtl"] table td:last-child {
+  border-left: none;
+  border-right: 1px solid #e8e8e8;
+}
+
+/* Index Table RTL */
+[dir="rtl"] .index_table {
+  direction: rtl;
+}
+
+[dir="rtl"] .index_table .col-selectable {
+  text-align: left;
+}
+
+[dir="rtl"] .index_table .col-actions {
+  text-align: left;
+}
+
+/* Filters RTL */
+[dir="rtl"] #filters_sidebar_section {
+  direction: rtl;
+}
+
+[dir="rtl"] #filters_sidebar_section .filter_form_field {
+  direction: rtl;
+}
+
+[dir="rtl"] #filters_sidebar_section label {
+  text-align: right;
+}
+
+[dir="rtl"] #filters_sidebar_section input,
+[dir="rtl"] #filters_sidebar_section select {
+  direction: rtl;
+}
+
+/* Forms RTL */
+[dir="rtl"] form {
+  direction: rtl;
+}
+
+[dir="rtl"] .inputs {
+  direction: rtl;
+}
+
+[dir="rtl"] .inputs ol {
+  direction: rtl;
+}
+
+[dir="rtl"] .inputs ol li {
+  direction: rtl;
+}
+
+[dir="rtl"] .inputs label {
+  float: right;
+  text-align: right;
+  width: 20%;
+  margin-left: 2%;
+  margin-right: 0;
+}
+
+[dir="rtl"] .inputs input,
+[dir="rtl"] .inputs textarea,
+[dir="rtl"] .inputs select {
+  direction: rtl;
+  text-align: right;
+  float: right;
+  width: 76%;
+  margin-right: 0;
+  margin-left: 2%;
+}
+
+[dir="rtl"] .inputs .inline-hints {
+  direction: rtl;
+  text-align: right;
+  margin-right: 22%;
+  margin-left: 0;
+}
+
+[dir="rtl"] .inputs .inline-errors {
+  direction: rtl;
+  text-align: right;
+  margin-right: 22%;
+  margin-left: 0;
+}
+
+/* Buttons RTL */
+[dir="rtl"] .actions {
+  direction: rtl;
+}
+
+[dir="rtl"] .actions input[type="submit"],
+[dir="rtl"] .actions a {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+[dir="rtl"] .actions ol li {
+  float: right;
+}
+
+/* Pagination RTL */
+[dir="rtl"] .pagination {
+  direction: rtl;
+}
+
+[dir="rtl"] .pagination a,
+[dir="rtl"] .pagination span {
+  float: right;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+[dir="rtl"] .pagination .first,
+[dir="rtl"] .pagination .prev {
+  border-radius: 0 4px 4px 0;
+}
+
+[dir="rtl"] .pagination .next,
+[dir="rtl"] .pagination .last {
+  border-radius: 4px 0 0 4px;
+}
+
+/* Status Tags RTL */
+[dir="rtl"] .status_tag {
+  direction: rtl;
+}
+
+/* Panels RTL */
+[dir="rtl"] .panel {
+  direction: rtl;
+}
+
+[dir="rtl"] .panel h3 {
+  text-align: right;
+}
+
+[dir="rtl"] .panel .panel_contents {
+  direction: rtl;
+}
+
+/* Batch Actions RTL */
+[dir="rtl"] .batch_actions_selector {
+  float: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .batch_actions_selector .dropdown_menu {
+  direction: rtl;
+  left: auto;
+  right: 0;
+}
+
+/* Dropdown Menus RTL */
+[dir="rtl"] .dropdown_menu {
+  direction: rtl;
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .dropdown_menu ul {
+  direction: rtl;
+}
+
+[dir="rtl"] .dropdown_menu li {
+  text-align: right;
+}
+
+/* Comments RTL */
+[dir="rtl"] .comments {
+  direction: rtl;
+}
+
+[dir="rtl"] .comment {
+  direction: rtl;
+}
+
+[dir="rtl"] .comment .comment_author {
+  float: right;
+}
+
+[dir="rtl"] .comment .comment_created_at {
+  float: left;
+}
+
+/* Search RTL */
+[dir="rtl"] .search_form {
+  direction: rtl;
+}
+
+[dir="rtl"] .search_form input[type="text"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Language Switcher RTL Specific */
+[dir="rtl"] .language-switcher {
+  direction: rtl;
+}
+
+[dir="rtl"] .language-switcher .dropdown-toggle {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .language-switcher .dropdown-menu {
+  left: 0;
+  right: auto;
+}
+
+[dir="rtl"] .language-switcher .dropdown-item {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+[dir="rtl"] .language-switcher-header {
+  left: 10px;
+  right: auto;
+}
+
+[dir="rtl"] .language-switcher-admin .dropdown-menu {
+  left: 0;
+  right: auto;
+}
+
+[dir="rtl"] .language-switcher-admin .dropdown-toggle,
+[dir="rtl"] .language-switcher-admin .dropdown-item {
+  flex-direction: row-reverse;
+}
+
+/* Charts RTL */
+[dir="rtl"] .chart-container {
+  direction: rtl;
+}
+
+/* Flash Messages RTL */
+[dir="rtl"] .alert {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .alert .btn-close {
+  float: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Dashboard RTL */
+[dir="rtl"] .dashboard-content {
+  direction: rtl;
+}
+
+[dir="rtl"] .dashboard-content .columns {
+  direction: rtl;
+}
+
+[dir="rtl"] .dashboard-content .column {
+  float: right;
+}
+
+/* Error Pages RTL */
+[dir="rtl"] .error-page {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Login Form RTL */
+[dir="rtl"] #login {
+  direction: rtl;
+}
+
+[dir="rtl"] #login form {
+  direction: rtl;
+}
+
+[dir="rtl"] #login .inputs {
+  direction: rtl;
+}
+
+[dir="rtl"] #login .inputs label {
+  text-align: right;
+}
+
+[dir="rtl"] #login .inputs input {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Footer RTL */
+[dir="rtl"] #footer {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Utility Classes for RTL */
+[dir="rtl"] .text-left {
+  text-align: right !important;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left !important;
+}
+
+[dir="rtl"] .float-left {
+  float: right !important;
+}
+
+[dir="rtl"] .float-right {
+  float: left !important;
+}
+
+[dir="rtl"] .ml-1 { margin-left: 0 !important; margin-right: 0.25rem !important; }
+[dir="rtl"] .ml-2 { margin-left: 0 !important; margin-right: 0.5rem !important; }
+[dir="rtl"] .ml-3 { margin-left: 0 !important; margin-right: 1rem !important; }
+[dir="rtl"] .ml-4 { margin-left: 0 !important; margin-right: 1.5rem !important; }
+[dir="rtl"] .ml-5 { margin-left: 0 !important; margin-right: 3rem !important; }
+
+[dir="rtl"] .mr-1 { margin-right: 0 !important; margin-left: 0.25rem !important; }
+[dir="rtl"] .mr-2 { margin-right: 0 !important; margin-left: 0.5rem !important; }
+[dir="rtl"] .mr-3 { margin-right: 0 !important; margin-left: 1rem !important; }
+[dir="rtl"] .mr-4 { margin-right: 0 !important; margin-left: 1.5rem !important; }
+[dir="rtl"] .mr-5 { margin-right: 0 !important; margin-left: 3rem !important; }
+
+[dir="rtl"] .pl-1 { padding-left: 0 !important; padding-right: 0.25rem !important; }
+[dir="rtl"] .pl-2 { padding-left: 0 !important; padding-right: 0.5rem !important; }
+[dir="rtl"] .pl-3 { padding-left: 0 !important; padding-right: 1rem !important; }
+[dir="rtl"] .pl-4 { padding-left: 0 !important; padding-right: 1.5rem !important; }
+[dir="rtl"] .pl-5 { padding-left: 0 !important; padding-right: 3rem !important; }
+
+[dir="rtl"] .pr-1 { padding-right: 0 !important; padding-left: 0.25rem !important; }
+[dir="rtl"] .pr-2 { padding-right: 0 !important; padding-left: 0.5rem !important; }
+[dir="rtl"] .pr-3 { padding-right: 0 !important; padding-left: 1rem !important; }
+[dir="rtl"] .pr-4 { padding-right: 0 !important; padding-left: 1.5rem !important; }
+[dir="rtl"] .pr-5 { padding-right: 0 !important; padding-left: 3rem !important; }
+
+/* Arabic Font Improvements */
+[dir="rtl"] body,
+[dir="rtl"] .arabic-text {
+  font-family: 'Segoe UI', Tahoma, 'Times New Roman', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4, [dir="rtl"] h5, [dir="rtl"] h6 {
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+/* Input placeholders RTL */
+[dir="rtl"] input::placeholder,
+[dir="rtl"] textarea::placeholder {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Select boxes RTL */
+[dir="rtl"] select {
+  direction: rtl;
+  text-align: right;
+  padding-right: 8px;
+  padding-left: 25px;
+  background-position: left 8px center;
+}
+
+/* Checkbox and Radio RTL */
+[dir="rtl"] input[type="checkbox"],
+[dir="rtl"] input[type="radio"] {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+[dir="rtl"] .checkbox label,
+[dir="rtl"] .radio label {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+/* Date and Time Pickers RTL */
+[dir="rtl"] .datepicker,
+[dir="rtl"] .timepicker {
+  direction: rtl;
+}
+
+[dir="rtl"] .datepicker table {
+  direction: rtl;
+}
+
+[dir="rtl"] .datepicker td,
+[dir="rtl"] .datepicker th {
+  text-align: center;
+}
+
+/* Icon adjustments for RTL */
+[dir="rtl"] .icon-before {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+[dir="rtl"] .icon-after {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+/* Responsive RTL adjustments */
+@media (max-width: 768px) {
+  [dir="rtl"] #main_content_wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  [dir="rtl"] #sidebar {
+    float: none;
+    width: 100%;
+    position: static;
+  }
+  
+  [dir="rtl"] .language-switcher-header {
+    position: static;
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+/* Hide ActiveAdmin "Powered by" footer - TARGETED APPROACH */
+a[href*="activeadmin.info"] {
+  display: none !important;
+}
+
+/* Hide specific footer text patterns */
+body > p:last-child:empty,
+#wrapper > p:last-child:empty {
+  display: none !important;
+}

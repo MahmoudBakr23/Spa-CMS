@@ -4,7 +4,7 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Opal Spa"
+  config.site_title = proc { I18n.t("app.name") }
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -167,7 +167,7 @@ ActiveAdmin.setup do |config|
   # You can add before, after and around filters to all of your
   # Active Admin resources and pages from here.
   #
-  # config.before_action :do_something_awesome
+  # config.before_action :set_locale  # This is handled by ApplicationController
 
   # == Attribute Filters
   #
@@ -186,6 +186,32 @@ ActiveAdmin.setup do |config|
   # available formats in your application.
   #
   config.localize_format = :long
+
+  # == I18n Configuration
+  #
+  # Language switching is handled via URL routing (/en/admin and /ar/admin)
+  # No custom language switcher needed as translations work automatically
+
+  # Language switching is handled via URL routing
+  # Translations will load automatically
+
+  # Add simple JavaScript to remove ActiveAdmin footer
+  # config.head = <<-HTML.html_safe
+  #   <script>
+  #     document.addEventListener('DOMContentLoaded', function() {
+  #       setTimeout(function() {
+  #         // Only target very specific footer links
+  #         const footerLinks = document.querySelectorAll('a[href*="activeadmin.info"]');
+  #         footerLinks.forEach(function(link) {
+  #           const parent = link.parentElement;
+  #           if (parent && parent.tagName === 'P') {
+  #             parent.style.display = 'none';
+  #           }
+  #         });
+  #       }, 1000);
+  #     });
+  #   </script>
+  # HTML
 
   # == Setting a Favicon
   #
@@ -232,6 +258,9 @@ ActiveAdmin.setup do |config|
   #
   # To load a javascript file:
   #   config.register_javascript 'my_javascript.js'
+
+  # Register RTL support stylesheet
+  config.register_stylesheet "rtl_support.css"
 
   # == CSV options
   #
@@ -334,19 +363,5 @@ ActiveAdmin.setup do |config|
   # By default, the footer shows the current Active Admin version. You can
   # override the content of the footer here.
   #
-  # config.footer = 'my custom footer text'
-
-  # == Sorting
-  #
-  # By default ActiveAdmin::OrderClause is used for sorting logic
-  # You can inherit it with own class and inject it for all resources
-  #
-  # config.order_clause = MyOrderClause
-
-  # == Webpacker
-  #
-  # By default, Active Admin uses Sprocket's asset pipeline.
-  # You can switch to using Webpacker here.
-  #
-  # config.use_webpacker = true
+  # config.footer = false
 end

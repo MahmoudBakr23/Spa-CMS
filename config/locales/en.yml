@@ -29,3 +29,266 @@
 
 en:
   hello: "Hello world"
+  
+  # Application specific translations
+  app:
+    name: "Spa Management"
+    dashboard: "Dashboard"
+    welcome: "Welcome"
+    
+  # Navigation and menu items
+  navigation:
+    dashboard: "Dashboard"
+    clients: "Clients"
+    trainers: "Trainers"
+    services: "Services"
+    sessions: "Sessions"
+    expenses: "Expenses"
+    revenues: "Revenues"
+    admin_users: "Admin Users"
+    settings: "Settings"
+    logout: "Logout"
+    login: "Login"
+
+  # Model names (singular and plural)
+  activerecord:
+    models:
+      client:
+        one: "Client"
+        other: "Clients"
+      trainer:
+        one: "Trainer"
+        other: "Trainers"
+      service:
+        one: "Service"
+        other: "Services"
+      session:
+        one: "Session"
+        other: "Sessions"
+      expense:
+        one: "Expense"
+        other: "Expenses"
+      revenue:
+        one: "Revenue"
+        other: "Revenues"
+      admin_user:
+        one: "Admin User"
+        other: "Admin Users"
+    
+    attributes:
+      client:
+        first_name: "First Name"
+        last_name: "Last Name"
+        phone: "Phone"
+        email: "Email"
+        full_name: "Full Name"
+        created_at: "Created At"
+        updated_at: "Updated At"
+      
+      trainer:
+        first_name: "First Name"
+        last_name: "Last Name"
+        phone: "Phone"
+        admin_user: "Admin User"
+        full_name: "Full Name"
+        created_at: "Created At"
+        updated_at: "Updated At"
+      
+      service:
+        name: "Service Name"
+        price: "Price"
+        duration: "Duration (minutes)"
+        created_at: "Created At"
+        updated_at: "Updated At"
+      
+      session:
+        client: "Client"
+        trainer: "Trainer"
+        service: "Service"
+        perform_at: "Session Date"
+        status: "Status"
+        notes: "Notes"
+        created_at: "Booked At"
+        updated_at: "Updated At"
+      
+      expense:
+        name: "Expense Name"
+        amount: "Amount"
+        occurred_on: "Date"
+        category: "Category"
+        notes: "Notes"
+        trainer: "Trainer"
+        created_at: "Created At"
+        updated_at: "Updated At"
+      
+      revenue:
+        session: "Session"
+        amount: "Amount"
+        created_at: "Created At"
+        updated_at: "Updated At"
+      
+      admin_user:
+        email: "Email"
+        password: "Password"
+        role: "Role"
+        sign_in_count: "Sign In Count"
+        current_sign_in_at: "Current Sign In At"
+        created_at: "Created At"
+        updated_at: "Updated At"
+
+  # Session status values
+  session_statuses:
+    scheduled: "Scheduled"
+    completed: "Completed"
+    cancelled: "Cancelled"
+    no_show: "No Show"
+
+  # User roles
+  user_roles:
+    admin: "Admin"
+    secretary: "Secretary"
+    trainer: "Trainer"
+
+  # Dashboard translations
+  dashboard:
+    title: "Dashboard"
+    total_clients: "Total Clients"
+    total_revenue: "Total Revenue"
+    total_sessions: "Total Sessions"
+    upcoming_sessions: "Upcoming Sessions"
+    sessions_per_day: "Sessions per Day (Last 30 Days)"
+    revenue_per_day: "Revenue per Day (Last 30 Days)"
+    sessions_by_service: "Sessions by Service"
+    revenue_by_service: "Revenue by Service"
+    latest_sessions: "Latest Sessions"
+    egp: "EGP"
+
+  # Form labels and buttons
+  forms:
+    submit: "Save"
+    cancel: "Cancel"
+    delete: "Delete"
+    edit: "Edit"
+    show: "Show"
+    new: "New"
+    back: "Back"
+    search: "Search"
+    filter: "Filter"
+    export: "Export"
+    import: "Import"
+    actions: "Actions"
+    refund: "Refund"
+    select_client: "Select a client"
+    select_service: "Select a service"
+    select_trainer: "Select a trainer"
+    select_status: "Select status"
+    choose_time: "Choose session time"
+    optional_notes: "Optional notes about the session"
+    refund_success: "Session #%{id} has been refunded."
+    refund_failed: "Failed to refund session."
+    past_sessions: "Past Sessions"
+    password_confirmation: "Password Confirmation"
+    
+  # Submit button translations
+  helpers:
+    submit:
+      create: "Create %{model}"
+      update: "Update %{model}"
+      client:
+        create: "Create Client"
+        update: "Update Client"
+      trainer:
+        create: "Create Trainer"
+        update: "Update Trainer"
+      service:
+        create: "Create Service"
+        update: "Update Service"
+      session:
+        create: "Create Session"
+        update: "Update Session"
+      expense:
+        create: "Create Expense"
+        update: "Update Expense"
+      revenue:
+        create: "Create Revenue"
+        update: "Update Revenue"
+      admin_user:
+        create: "Create Admin User"
+        update: "Update Admin User"
+
+  # ActiveAdmin/Formtastic specific form submit translations
+  formtastic:
+    actions:
+      create: "Create %{model}"
+      update: "Update %{model}"
+      submit: "Save"
+      cancel: "Cancel"
+      reset: "Reset"
+      client:
+        create: "Create Client"
+        update: "Update Client"
+      trainer:
+        create: "Create Trainer"
+        update: "Update Trainer"
+      service:
+        create: "Create Service"
+        update: "Update Service"
+      session:
+        create: "Create Session"
+        update: "Update Session"
+      expense:
+        create: "Create Expense"
+        update: "Update Expense"
+      revenue:
+        create: "Create Revenue"
+        update: "Update Revenue"
+      admin_user:
+        create: "Create Admin User"
+        update: "Update Admin User"
+    
+  # Common phrases
+  common:
+    yes: "Yes"
+    no: "No"
+    loading: "Loading..."
+    no_data: "No data available"
+    confirmation: "Are you sure?"
+    success: "Success"
+    error: "Error"
+    warning: "Warning"
+    info: "Information"
+    view: "View"
+    download: "Download"
+
+  # Language switcher
+  language:
+    switch_to_english: "English"
+    switch_to_arabic: "العربية"
+    current_language: "Current Language"
+    switched_successfully: "Language switched to %{locale} successfully"
+    invalid_locale: "Invalid language selection"
+    en: "English"
+    ar: "Arabic"
+
+  # ActiveAdmin translations
+  active_admin:
+    powered_by: ""
+    comments: "Comments"
+    comments_menu: "Comments"
+
+  # Action button patterns with correct English word order
+  action_buttons:
+    new_client: "New Client"
+    new_trainer: "New Trainer"
+    new_service: "New Service"
+    new_session: "New Session"
+    new_expense: "New Expense"
+    new_revenue: "New Revenue"
+    new_admin_user: "New Admin User"
+    edit_client: "Edit Client"
+    edit_trainer: "Edit Trainer"
+    edit_service: "Edit Service"
+    edit_session: "Edit Session"
+    edit_expense: "Edit Expense"
+    edit_revenue: "Edit Revenue"
+    edit_admin_user: "Edit Admin User"
