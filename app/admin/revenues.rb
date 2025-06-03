@@ -4,7 +4,6 @@ ActiveAdmin.register Revenue do
 
   permit_params :session_id, :amount
 
-  filter :session
   filter :session_service_name, as: :string, label: I18n.t("activerecord.models.service.one")
   filter :amount
   filter :created_at
