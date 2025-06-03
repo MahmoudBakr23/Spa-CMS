@@ -469,7 +469,7 @@ GEM
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
     simple_command (1.0.1)
-    solargraph (0.54.5)
+    solargraph (0.55.0)
       backport (~> 1.2)
       benchmark (~> 0.4)
       bundler (~> 2.0)
